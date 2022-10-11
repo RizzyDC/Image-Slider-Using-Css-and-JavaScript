@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider Using Css and JavaScript</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="slider">
+        <div class="slider-items">
+          <img class="slider-item" src="img/pexels-aron-visuals-1743165.jpg" alt="Mountains" />
+          <img class="slider-item" src="img/pexels-katja-592077.jpg" alt="Pine trees" />
+          <img class="slider-item" src="img/pexels-simon-berger-1323550.jpg" alt="Cropland" />
+        </div>
+
+        <div class="slider-controls">
+          <span class="bx bxs-chevron-left prev" onclick="changeSlide(-1)"></span>
+          <span class="bx bxs-chevron-right next" onclick="changeSlide(1)"></span>
+        </div>
+
+        <div class="slider-indicators">
+          <span onclick="moveTo(1)"></span>
+          <span onclick="moveTo(2)"></span>
+          <span onclick="moveTo(3)"></span>
+        </div>
+
+        <div class="slider-content">
+          <h3>Cropland</h3>
+          <h3>Pine trees</h3>
+          <h3>Mountains</h3>
+        </div>
+      </div>
+
+      <details class="det-style">
+        <summary class="sum-style">photos used in this project - click for details</summary>
+        <p>
+          <a href="https://www.pexels.com/photo/cropland-duiring-night-time-1743165/" target="blank"
+            >Cropland duiring Night Time by Aron Visuals</a
+          >
+        </p>
+        <p>
+          <a href="https://www.pexels.com/photo/pine-trees-under-blue-sky-during-golden-hour-592077/" target="blank"
+            >Pine Trees Under Blue Sky during Golden Hour by katja</a
+          >
+        </p>
+        <p>
+          <a href="https://www.pexels.com/photo/silhouette-of-mountains-1323550/" target="blank"
+            >Silhouette Of Mountains by Simon Berger</a
+          >
+        </p>
+      </details>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
